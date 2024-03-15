@@ -31,4 +31,5 @@ npm run dev
 - TanStack Query
 - Vite
 - FSD
+- VKUI
 
