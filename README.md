@@ -1,7 +1,8 @@
 # VK Internship
 
-In this project, an assignment was completed for an internship at VK
+In this project, an assignment was completed for an internship at VK.
 
+The application is developed primarily for mobile devices
 ## Installation
 
 To install the project, clone the repository:
@@ -19,7 +20,7 @@ npm run dev
 ```
 
 ## Examples
-[Project link](https://chinakkk.github.io/humans-base/)
+[Project link](https://vkinternship.surge.sh/)
 
 
 ## Using 

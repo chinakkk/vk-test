@@ -45,7 +45,7 @@ export const AgeInput: FC<AgeInputProps> = () => {
 
   return (
     <FormItem
-      top="Введите имя"
+      top="Введите имя и подождите 3 секунды"
       bottom={error || bottomText}
       status={error ? "error" : "default"}
     >
