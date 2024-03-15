@@ -7,8 +7,13 @@ interface IFact {
 }
 
 const axiosGetFact = async (): Promise<IFact> => {
-  const { data } = await axios.get("https://catfact.ninja/fact");
-  return data;
+  try {
+    const { data } = await axios.get("https://catfact.ninja/fact");
+    return data;
+  } catch (error) {
+    console.error("Ошбика при получении факта", error);
+    throw error;
+  }
 };
 export const useGetFactMutation = () => {
   return useMutation({
