@@ -11,7 +11,7 @@ interface IRouterSlice {
 }
 
 const initialState: IRouterSlice = {
-  activePanel: "",
+  activePanel: "firstExercise",
 };
 
 const routerSlice = createSlice({
@@ -28,7 +28,7 @@ export const { setActivePanel } = routerSlice.actions;
 export default routerSlice.reducer;
 
 export const useRouterState = () =>
-  useSelector((state: RootState) => state.modalRateSlice);
+  useSelector((state: RootState) => state.routerSlice);
 
 export const useRouterActions = () => {
   const dispatch = useAppDispatch();

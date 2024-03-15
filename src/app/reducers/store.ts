@@ -1,8 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
+import routerSlice from "src/app/router/routerSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    routerSlice,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
