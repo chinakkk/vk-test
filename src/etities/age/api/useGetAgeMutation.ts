@@ -9,7 +9,7 @@ interface IAge {
 
 const axiosGetAge = async (name: string): Promise<IAge | undefined> => {
   try {
-    if (/[^\p{L}]/u.test(name)) return undefined;
+    if (/[^\p{L}]/u.test(name) || !name) return undefined;
     const { data } = await axios.get(`https://api.agify.io/?name=${name}`);
     return data;
   } catch (error) {

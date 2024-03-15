@@ -11,7 +11,7 @@ interface IRouterSlice {
 }
 
 const initialState: IRouterSlice = {
-  activePanel: "secondExercise",
+  activePanel: "firstExercise",
 };
 
 const routerSlice = createSlice({

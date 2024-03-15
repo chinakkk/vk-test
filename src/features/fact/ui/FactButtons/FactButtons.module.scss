@@ -1,0 +1,17 @@
+.container {
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .getFactButton {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nextPageButton {
+    margin-top: 10px;
+
+    width: 100%;
+  }
+}

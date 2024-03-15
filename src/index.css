@@ -11,6 +11,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --main-max-width: 425px;
+
 }
 
 /*Привет разработчик, хорошего тебе дня!)*/
@@ -72,7 +74,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
 
   scroll-behavior: smooth;
