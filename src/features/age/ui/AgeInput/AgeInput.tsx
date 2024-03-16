@@ -30,13 +30,14 @@ export const AgeInput: FC<AgeInputProps> = () => {
     setBottomText("");
   };
   useEffect(() => {
-    if (/[^\p{L}]/u.test(nameInput)) {
-      setError("Можно вводить только буквы");
+    if (/[^A-Za-z]/.test(nameInput)) {
+      setError("Можно вводить только латиницу :(");
     } else {
       setError("");
     }
   }, [nameInput]);
   useEffect(() => {
+    if (data?.age === null) setBottomText(`Это имя не подходит`);
     if (data?.age) {
       receivedNames[nameInput] = data?.age;
       setBottomText(`Вам ${data?.age} ${getYearWord(data?.age)}`);
